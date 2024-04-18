@@ -32,8 +32,9 @@ if (jsonData) {
 }
 
 const urlParams = new URLSearchParams(window.location.search);
-const link = urlParams.get('link');
+let link = urlParams.get('link');
 
+link = link.replaceAll(' ','-');
 console.log(link)
 
 let redirect = map.get(link.toLowerCase())
