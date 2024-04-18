@@ -1,11 +1,9 @@
-// import planets from './links.json' with { type: "json" };
-
-
+let map = new Map();
 
 function loadJSON(filePath) {
     var xhr = new XMLHttpRequest();
     xhr.overrideMimeType("application/json");
-    xhr.open('GET', filePath, false); // false makes the request synchronous
+    xhr.open('GET', filePath, false);
     xhr.send(null);
     if (xhr.status === 200) {
         return JSON.parse(xhr.responseText);
@@ -15,32 +13,51 @@ function loadJSON(filePath) {
     }
 }
 
-// Function to iterate through array of objects
 function iterateThroughObjects(data) {
     data.forEach(function (item) {
         map.set(item.name.toLowerCase(), item.link);
     });
 }
 
-// Example usage
-let filePath = 'links.json'; // Path to your JSON file
-let jsonData = loadJSON(filePath);
-let map = new Map();
+function startRedirect(){
 
-if (jsonData) {
+    let filePath = 'links.json';
+    let jsonData = loadJSON(filePath);
+
+
+    if (!jsonData) {
+        document.body.innerText = "Fail to load data!";
+        return;
+    }
+
     iterateThroughObjects(jsonData);
+
+    const urlParams = new URLSearchParams(window.location.search);
+    let link = urlParams.get('link');
+
+    if (!link){
+        document.body.innerText = "query is empty!";
+        return;
+    }
+
+    document.body.innerText = "searching for " + link;
+
+    link = link.replaceAll(' ','-');
+    console.log(link)
+
+    let redirect = map.get(link.toLowerCase())
+
+    if (redirect === undefined){
+        window.location.href = "404.html";
+        return;
+    }
+
+    document.body.innerText = "redirecting to " + redirect;
+    window.location.href = redirect;
+
 }
 
-const urlParams = new URLSearchParams(window.location.search);
-let link = urlParams.get('link');
-
-link = link.replaceAll(' ','-');
-console.log(link)
-
-let redirect = map.get(link.toLowerCase())
-
-if (redirect !== undefined)
-    window.location.href = redirect;
+startRedirect()
 
 
 

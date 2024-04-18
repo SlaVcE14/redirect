@@ -1,0 +1,12 @@
+@font-face {
+    font-family: KanitRegular;
+    src: url("font/Kanit-Regular.ttf");
+}
+@font-face {
+    font-family: KanitLight;
+    src: url("font/Kanit-Light.ttf");
+}
+body{
+    background-color: #131313;
+    color: wheat;
+}
