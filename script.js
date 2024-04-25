@@ -49,6 +49,7 @@ function startRedirect(){
 
     if (redirect === undefined){
         document.body.innerHTML = '<iframe src="404.html"  width="100%" height="500">'
+        document.title = "Site not found"
         return;
     }
 
