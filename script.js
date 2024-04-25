@@ -48,7 +48,7 @@ function startRedirect(){
     let redirect = map.get(link.toLowerCase())
 
     if (redirect === undefined){
-        window.location.href = "404.html";
+        document.body.innerHTML = '<iframe src="404.html"  width="100%" height="500">'
         return;
     }
 
