@@ -1,7 +1,7 @@
 let map = new Map();
 
 function loadJSON(filePath) {
-    var xhr = new XMLHttpRequest();
+    let xhr = new XMLHttpRequest();
     xhr.overrideMimeType("application/json");
     xhr.open('GET', filePath, false);
     xhr.send(null);
