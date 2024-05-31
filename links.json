@@ -16,6 +16,10 @@
     "link": "https://apt.izzysoft.de/fdroid/index/apk/com.sjapps.jsonlist"
   },
   {
+    "name": "Weather-app-info",
+    "link": "https://slavce14.github.io/apps/Weather/info.json"
+  },
+  {
     "name": "firework-android-GitHub",
     "link": "https://github.com/SlaVcE14/Firework-android"
   },
