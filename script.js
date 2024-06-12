@@ -53,7 +53,7 @@ function startRedirect(){
         return;
     }
 
-    document.head.innerHTML += "<meta property=\"og:title\" content="+ link +">";
+    document.getElementById("title_meta").setAttribute("connect",link);
 
     document.body.innerText = "redirecting to " + redirect;
     window.location.href = redirect;
