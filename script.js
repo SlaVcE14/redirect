@@ -53,8 +53,6 @@ function startRedirect(){
         return;
     }
 
-    document.getElementById("title_meta").setAttribute("content",link);
-
     document.body.innerText = "redirecting to " + redirect;
     window.location.href = redirect;
 
