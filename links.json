@@ -12,6 +12,10 @@
     "link": "http://www.github.com/slavce14/JsonList"
   },
   {
+    "name": "JsonList-fdroid",
+    "link": "https://f-droid.org/en/packages/com.sjapps.jsonlist"
+  },
+  {
     "name": "JsonList-izzy",
     "link": "https://apt.izzysoft.de/fdroid/index/apk/com.sjapps.jsonlist"
   },
