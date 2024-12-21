@@ -20,12 +20,20 @@
     "link": "https://apt.izzysoft.de/fdroid/index/apk/com.sjapps.jsonlist"
   },
   {
+    "name": "JsonList-app",
+    "link": "https://slavce14.github.io/apps/JsonList"
+  },
+  {
+    "name": "JsonList-app-versions",
+    "link": "https://slavce14.github.io/apps/JsonList#versions"
+  },
+  {
     "name": "Weather-app",
-    "link": "https://slavce14.github.io/"
+    "link": "https://slavce14.github.io/apps/Weather"
   },
   {
     "name": "Weather-app-versions",
-    "link": "https://slavce14.github.io/apps/Weather/versions/Weather 1.5.2.apk"
+    "link": "https://slavce14.github.io/apps/Weather#versions"
   },
   {
     "name": "Weather-app-dev",
