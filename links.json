@@ -24,12 +24,20 @@
     "link": "https://slavce14.github.io/apps/JsonList"
   },
   {
+    "name": "JsonList-app-info",
+    "link": "https://slavce14.github.io/apps/JsonList/info.json"
+  },
+  {
     "name": "JsonList-app-versions",
     "link": "https://slavce14.github.io/apps/JsonList#versions"
   },
   {
     "name": "Weather-app",
     "link": "https://slavce14.github.io/apps/Weather"
+  },
+  {
+    "name": "Weather-app-info",
+    "link": "https://slavce14.github.io/apps/Weather/info.json"
   },
   {
     "name": "Weather-app-versions",
@@ -40,8 +48,16 @@
     "link": "https://slavce14.github.io/apps/Weather/versions/dev/Weather 1.5.4 dev 3.apk"
   },
   {
-    "name": "Weather-app-info",
-    "link": "https://slavce14.github.io/apps/Weather/info.json"
+    "name": "Password-Manager-app",
+    "link": "https://slavce14.github.io/apps/PasswordManager"
+  },
+  {
+    "name": "Password-Manager-app-info",
+    "link": "https://slavce14.github.io/apps/PasswordManager/info.json"
+  },
+  {
+    "name": "Password-Manager-app-versions",
+    "link": "https://slavce14.github.io/apps/PasswordManager#versions"
   },
   {
     "name": "firework-android-GitHub",
