@@ -48,8 +48,31 @@ function startRedirect(){
     let redirect = map.get(link.toLowerCase())
 
     if (redirect === undefined){
-        document.body.innerHTML = '<iframe src="404.html"  width="100%" height="500">'
-        document.title = "Site not found"
+
+        let list = new Map();
+
+        map.forEach((value, key) => {
+            if (key.includes(link.toLowerCase())){
+                list.set(key, value)
+                console.log(value)
+            }
+        })
+
+        if (list.size === 0){
+            document.body.innerHTML = '<iframe src="404.html"  width="100%" height="500">'
+            document.title = "Site not found"
+            return;
+        }
+
+        document.body.style.fontFamily = "KanitRegular, \"roboto\", sans-serif"
+        document.body.style.margin = "auto";
+        document.body.style.width = "50%";
+        document.body.innerHTML = `<h2 style="text-align: center">Results for: <span style="color: aqua">${link}</span></h2><hr><ul>`
+
+        list.forEach((value, key) => {
+            document.body.innerHTML += `<li style="text-align: center; list-style: none"><a style="color: white" href="${value}">${key}</a></li>`
+        })
+        document.body.innerHTML += `</ul>`
         return;
     }
 
