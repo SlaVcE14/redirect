@@ -64,6 +64,7 @@ function startRedirect(){
             return;
         }
 
+        document.title = `Results for ${link}`
         document.body.style.fontFamily = "KanitRegular, \"roboto\", sans-serif"
         document.body.style.margin = "auto";
         document.body.style.width = "50%";
